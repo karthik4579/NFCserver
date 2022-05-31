@@ -16,7 +16,7 @@ if not firebase_admin._apps:
 def log(username):
     # Get current date and time 
     now = datetime.now()
-    date = now.strftime("%m/%d/%Y")
+    date = now.strftime("%d/%m/%Y")
     time = now.strftime("%I:%M %p")
 
     ref = db.reference(f'/raspberry pi/Logs')
