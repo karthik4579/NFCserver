@@ -26,4 +26,4 @@ async def register():
     process1 = subprocess.Popen(['/bin/bash', '-c', cmd3], stdout=subprocess.PIPE)
     out1 = list(process1.communicate())
     bash('sudo systemctl start readservice.service')
-    return out1[0].decode()
+    return str(out1[0].decode())
